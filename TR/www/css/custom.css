@@ -31,4 +31,11 @@ footer{
 footer p{margin:0px;}
 
 
-
+/*login*/
+.login{}
+.login h2{
+      font-size: 2.2rem!important;
+    text-align: center;
+    margin: 23% 0 20% 0;
+}
+.login .btn-block{width:100%;margin: 10% 0 0 0;}

@@ -29,3 +29,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'loginController'
         });
 });
+
+app.run(function($rootScope){
+ $rootScope.$on('$stateChangeSuccess', 
+         function(event, toState, toParams, fromState, fromParams){ 
+             if(fromState.name == "navigation" && toState.name == "map"){
+                //$rootScope.$broadcast('setNewTerritory');
+             }
+         });
+});

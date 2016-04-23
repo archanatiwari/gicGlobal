@@ -10,10 +10,10 @@ app.controller('mapController', function($scope, $rootScope, SharedFactory, Shar
         var polygon = new google.maps.Polygon({
         paths: path,
         strokeColor: color,
-        strokeOpacity: 0,
+        strokeOpacity: 1,
         strokeWeight: 1,
         fillColor: color,
-        fillOpacity: 0.35
+        fillOpacity: 0.3
      });
      polygon['userId'] = id;
      polygon.setMap(map);
@@ -24,10 +24,10 @@ app.controller('mapController', function($scope, $rootScope, SharedFactory, Shar
     //});
   };
 
-  $rootScope.$on('setNewTerritory', function(){
-      var obj = SharedDataService.getNewTerritory();
-      colorMaps(obj.path, obj.color, obj.userId);
-  });
+  // $rootScope.$on('setNewTerritory', function(){
+  //     var obj = SharedDataService.getNewTerritory();
+  //     colorMaps(obj.path, obj.color, obj.userId);
+  // });
 
   var loadMap = function(){
     var userPos = $scope.currentUser.source;

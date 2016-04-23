@@ -9,7 +9,7 @@ app.controller('loginController', function($scope, $state, SharedFactory, Shared
     });
 	
 	//hard-coded login
-	$scope.email = "archit@globant.com", $scope.password = "1234abcd";
+    $scope.email = "archit@globant.com", $scope.password = "1234abcd";
 
     $scope.doLogin = function() {
         var userData = $scope.userData;
@@ -17,7 +17,7 @@ app.controller('loginController', function($scope, $state, SharedFactory, Shared
             var user = userData[i];
             if (user.email == $scope.email && user.password == $scope.password) {
                 SharedDataService.setCurrentUser(user);
-                $state.go('map');
+                $state.go('landing');
                 break;
             } else {
                 console.log('Enter correct username and password');

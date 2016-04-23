@@ -24,7 +24,7 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
 	    userRoute = new google.maps.Polyline({
 	        path: [],
 	        geodesic : true,
-	        strokeColor: '#FF0000',
+	        strokeColor: '#00796B',
 	        strokeOpacity: 1.0,
 	        strokeWeight: 2,
 	        editable: false,
@@ -89,7 +89,6 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
                 if (curIndex == curRoute.length -1){
                   //completed the loop, reached source position
                   //userRoute.setPath([]); //clear the path
-                  //$scope.stopRunning();
                   //colorMaps(curUser.routes[curRouteIndex].path, "#E01B2F", curUser.id); // mark the territory
                   curIndex = 0; 
                   //curRouteIndex++;                

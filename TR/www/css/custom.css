@@ -1,41 +1,213 @@
 .navbar-default {
-  background-color: #1BA39C;
-  border-color: #1BA39C;
+    background-color: #1BA39C;
+    border-color: #1BA39C;
 }
+
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
 }
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: rgba(221, 221, 221, 0);
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(221, 221, 221, 0);
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #F9F9F9;
+    background-color: #F9F9F9;
 }
+
 .navbar-default .navbar-brand {
-  color: #FDC360;
+    color: #FDC360;
 }
+
 .btn-default {
-  color: #F9F9F9;
-  background-color: #4B77BE;
-  border-color: #4B77BE;
+    color: #F9F9F9;
+    background-color: #4B77BE;
+    border-color: #4B77BE;
 }
-footer{
+
+footer {
     background-color: rgb(27, 163, 156);
-  color: #ffffff;
-  padding: 10px 10px;
-  margin-top: 20px;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
+    color: #ffffff;
+    padding: 10px 10px;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
-footer p{margin:0px;}
+
+footer p {
+    margin: 0px;
+}
 
 
 /*login*/
-.login{}
-.login h2{
-      font-size: 2.2rem!important;
+
+.login {
+    background: url(../img/login-bg.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.login .login-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.login .login-container .login-input {
+    border-bottom: 1px solid #7f7f2d;
+}
+
+.login .login-container label {
+    color: #d2d2d2;
+}
+
+.login h2 {
+    font-size: 2.2rem!important;
     text-align: center;
     margin: 23% 0 20% 0;
 }
-.login .btn-block{width:100%;margin: 10% 0 0 0;}
+
+.login .btn-block {
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
+
+/*Side Nav - archit*/
+
+.side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 45px!important;
+    line-height: 47px!important;
+    padding: 0 50px!important;
+}
+
+.side-nav a span {
+    position: absolute;
+    float: left;
+    margin-top: 16px;
+    left: 11px;
+}
+
+.side-nav a i {
+    position: absolute;
+    font-size: 1.3rem;
+    left: 10px;
+    margin-top: 13px;
+}
+
+.side-nav .logoutSid {
+    position: absolute;
+    bottom: 54px;
+    text-align: center;
+    width: 100%;
+}
+
+.login .btn-block {
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
+
+/*wrapper*/
+
+.wrapper {
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*button-collapse*/
+
+.button-collapse {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    margin-right: 15px;
+}
+
+
+/*heading*/
+.landing{
+
+}
+.landing .heading {
+    display: inline-block;
+}
+
+.landing .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.landing span {
+    margin-top: 28px;
+}
+.landing span i{
+    font-size: 20px;
+}
+.landing .inner-container{
+    width:100%;
+}
+.landing .btn-black {
+    width: 100%;
+    margin:5% 0px;
+    background: #000;
+}
+
+/* teamlisting - Archit*/
+.teamlisting{}
+.teamlisting .heading {
+    display: inline-block;
+}
+.teamlisting .top_header .fa-bars{
+    color: #fff;
+}
+.teamlisting .top_header{
+    background: rgba(4,143,129,0.75);
+        color: #fff;
+}
+.teamlisting .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.teamlisting span {
+    margin-top: 28px;
+}
+.teamlisting span i{
+    font-size: 20px;
+}
+.teamlisting .info_section_header{
+    padding-top: 20px;
+}
+.teamlisting .info_section_header h5{
+    font-size: 1.2rem;
+}
+.teamlisting .info_section_header h4{
+        font-size: 1.8rem;
+}
+.teamlisting .info_section_header h6 {
+    font-size: 0.8rem;
+    right: 7px;
+    position: relative;
+}
+.teamlisting .info_section_header .right_section_time{
+    padding-top: 8%;
+}
+.teamlisting .info_section_header .right_section_time .top_arrow{
+        position: absolute;
+    float: left;
+    right: 66px;
+    margin-top: 14px;
+}

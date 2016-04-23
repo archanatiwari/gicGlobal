@@ -3,10 +3,15 @@ var app = angular.module('trApp', ['ui.router']);
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/login');
     $stateProvider
-        .state('home', {
-            url: '/home',
-            templateUrl: 'partials/home.html',
-            controller: 'homeController'
+        .state('landing', {
+            url: '/landing',
+            templateUrl: 'partials/landing.html',
+            //controller: 'landingController'
+        })
+        .state('teamlisting', {
+            url: '/teamlisting',
+            templateUrl: 'partials/teamlisting.html',
+            controller: 'teamListingController'
         })
         .state('map', {
             url: '/map',
@@ -30,11 +35,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         });
 });
 
-app.run(function($rootScope){
- $rootScope.$on('$stateChangeSuccess', 
-         function(event, toState, toParams, fromState, fromParams){ 
-             if(fromState.name == "navigation" && toState.name == "map"){
-                //$rootScope.$broadcast('setNewTerritory');
-             }
-         });
-});
+// app.run(function($rootScope){
+//  $rootScope.$on('$stateChangeSuccess', 
+//          function(event, toState, toParams, fromState, fromParams){ 
+//              if(fromState.name == "navigation" && toState.name == "map"){
+//                 //$rootScope.$broadcast('setNewTerritory');
+//              }
+//          });
+// });

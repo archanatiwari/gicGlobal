@@ -249,10 +249,12 @@ float: right;
 .teamlisting .top_header .fa-bars{
     color: #fff;
 }
-.teamlisting .top_header{
+.teamlisting .top_header {
     background: rgba(0, 105, 94, 0.75);
     color: #fff;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
 }
 .teamlisting .heading h3 {
     font-size: 24px;
@@ -269,6 +271,9 @@ float: right;
 }
 .teamlisting .info_section_header{
     padding-top: 20px;
+}
+.teamlisting .info_section_header .row{
+    margin-bottom: 0px;
 }
 .teamlisting .info_section_header h5{
     font-size: 1.2rem;
@@ -301,6 +306,7 @@ float: right;
     border-radius: 2px;
     overflow: hidden;
     position: relative;
+    top: 13rem;
 }
 .teamlisting .collection .collection-item {
     background-color: transparent;
@@ -341,3 +347,98 @@ float: right;
     width: 90%;
     bottom: 10px;
 }
+
+.teamlisting .top-score {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    text-align: left;
+}
+.teamlisting .top-value {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.teamlisting .btn-black {
+    width: 94%;
+    margin: 5% 0px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+}
+
+/*notificatio =- Archit*/
+
+.notification{
+    height:100%;
+}
+
+
+.notification .heading {
+    display: inline-block;
+}
+/*.notification .top_header .fa-bars{
+    color: #fff;
+}*/
+.notification .top_header .fa-bars {
+    color: #000;
+}
+.notification .top_header {
+    background: rgba(255, 255, 255, 0.73);
+    color: #000;
+    position: relative;
+    border-bottom:1px solid gray;
+}
+.notification .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.notification .card .card-content {
+    padding: 10px 0 0px 10px;
+    border-radius: 0;
+}
+.notification .card .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: none;
+    padding: 0px 0 5px 10px;
+    z-index: 2;
+}
+
+.notification .card .card-content p {
+    margin: 0;
+    color: inherit;
+    min-height: 3rem;
+}
+
+.notification .card {
+    position: relative;
+    margin: 0.2rem 0 .5rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.notification .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #26a69a;
+    margin-right: 20px;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+.notification .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: #2BC3B5;
+}
+
+.notification .row {
+    margin-bottom: 0px;
+    background: rgba(255, 255, 255, 0.66)!important;
+}
+
+.notification .first_row{
+    padding-top: 1rem;
+}
+

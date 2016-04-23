@@ -2,6 +2,8 @@
 	"data": [{
 		"name": "Archit Soni",
 		"email": "archit@globant.com",
+		"password": "1234abcd",
+		"id": "57171e62f2a6bf241dc6149d",
 		"source": {
 			"lat": 12.90887,
 			"lng": 77.652779
@@ -104,6 +106,8 @@
 	}, {
 		"name": "Charan Adiga",
 		"email": "charan@globant.com",
+		"password": "1234abcd",
+		"id": "57171e62f2a6bf241dc6148c",
 		"source": {
 			"lat": 12.908381,
 			"lng": 77.652755
@@ -156,6 +160,8 @@
 	}, {
 		"name": "Archana Tiwari",
 		"email": "archana@globant.com",
+		"password": "1234abcd",
+		"id": "57171e62f2a6bf241dc6147b",
 		"source": {
 			"lat": 12.907874,
 			"lng": 77.652162

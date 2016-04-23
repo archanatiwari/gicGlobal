@@ -39,7 +39,9 @@ footer {
 footer p {
     margin: 0px;
 }
-
+.btn-block {
+    display: block!important;
+}
 
 /*login*/
 
@@ -135,9 +137,27 @@ footer p {
 
 
 /*heading*/
-.landing{
 
+.landing {
+    position: relative;
 }
+
+.landing .gradient-overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 75%, rgba(0, 105, 94, 0.75) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(47%, rgba(246, 246, 246, 0.47)), color-stop(100%, rgba(0, 105, 94, 0.75)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 75%, rgba(0, 105, 94, 0.75) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 75%, rgba(0, 105, 94, 0.75) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 75%, rgba(0, 105, 94, 0.75) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 75%, rgba(0, 105, 94, 0.75) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4db6ac', GradientType=1);
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+}
+
 .landing .heading {
     display: inline-block;
 }
@@ -148,19 +168,66 @@ footer p {
     margin: 0px;
     padding: 0px;
 }
+
 .landing span {
     margin-top: 28px;
 }
+
 .landing span i{
     font-size: 20px;
 }
-.landing .inner-container{
-    width:100%;
+
+.landing .inner-container {
+    width: 100%;
 }
+
 .landing .btn-black {
     width: 100%;
-    margin:5% 0px;
+    margin: 5% 0px;
     background: #000;
+}
+.landing .container {
+    height: 100vh;
+}
+
+.landing .title-block {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.landing .title-block i{
+    color:#676767;
+}
+.landing .title-block .floating-location{
+float: right;
+}
+.landing .title-block .info_section_header{
+    padding-top: 20px;
+    color:#fff;
+}
+.landing .title-block .info_section_header h5{
+    font-size: 1.2rem;
+}
+.landing .title-block .info_section_header h4{
+        font-size: 1.8rem;
+}
+.landing .title-block .info_section_header h6 {
+    font-size: 0.8rem;
+    right: 7px;
+    position: relative;
+}
+.landing .title-block .info_section_header .left_section_title{
+    padding-top: 12%;
+}
+.landing .title-block .info_section_header .right_section_time{
+    padding-top: 8%;
+}
+.landing .title-block .info_section_header .right_section_time .top_arrow{
+    position: absolute;
+    float: left;
+    right: 45px;
+    margin-top: 14px;
+    color: #fff;
 }
 
 /* teamlisting - Archit*/
@@ -172,8 +239,8 @@ footer p {
     color: #fff;
 }
 .teamlisting .top_header{
-    background: rgba(4,143,129,0.75);
-        color: #fff;
+    background: rgba(0, 105, 94, 0.75);
+    color: #fff;
 }
 .teamlisting .heading h3 {
     font-size: 24px;
@@ -182,7 +249,7 @@ footer p {
     padding: 0px;
     color: #fff;
 }
-.teamlisting span {
+.teamlisting .bell_icon {
     margin-top: 28px;
 }
 .teamlisting span i{
@@ -210,4 +277,50 @@ footer p {
     float: left;
     right: 66px;
     margin-top: 14px;
+}
+.teamlisting .listing_section{
+    margin-top: -20px;
+    background: rgba(255, 255, 255, 0.88);
+    height: 100%;
+}
+.teamlisting .collection {
+    margin: 0.5rem 0 1rem 0;
+    border: transparent!important;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.teamlisting .collection .collection-item {
+    background-color: transparent;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0;
+    border-bottom: none;
+}
+.teamlisting .collection .collection-item.avatar {
+    min-height: 55px;
+    padding-left: 23px;
+    position: relative;
+}
+.teamlisting .collection-item .user_image_list{
+    background: #BFBFBF;
+    position: absolute;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    left: 7px;
+}
+.teamlisting .collection-item .user_image_list i{
+    text-align: center;
+    position: relative;
+    left: 6px;
+    top: 4px;
+    color: dimgrey;
+}
+.collection .collection-item.avatar .title {
+    font-size: 16px;
+    padding-left: 20px;
+}
+.collection .btn-block {
+    display: block!important;
 }

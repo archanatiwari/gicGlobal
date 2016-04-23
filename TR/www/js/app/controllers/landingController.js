@@ -1,4 +1,4 @@
-app.controller('mapController', function($scope, $rootScope, SharedFactory, SharedDataService){
+app.controller('landingController', function($scope, $rootScope, SharedFactory, SharedDataService){
 
   //private variables
   var map = null, userPosition = null;

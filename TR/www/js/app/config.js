@@ -6,18 +6,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('landing', {
             url: '/landing',
             templateUrl: 'partials/landing.html',
-            //controller: 'landingController'
+            controller: 'landingController'
         })
         .state('teamlisting', {
             url: '/teamlisting',
             templateUrl: 'partials/teamlisting.html',
             controller: 'teamListingController'
         })
-        .state('map', {
-            url: '/map',
-            templateUrl: 'partials/map.html',
-            controller: 'mapController'
-        })
+        // .state('map', {
+        //     url: '/map',
+        //     templateUrl: 'partials/map.html',
+        //     controller: 'mapController'
+        // })
         .state('navigation', {
             url: '/navigation',
             templateUrl: 'partials/navigation.html',

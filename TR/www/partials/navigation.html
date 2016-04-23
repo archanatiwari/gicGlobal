@@ -3,17 +3,17 @@
 		<header-template></header-template>
 		<div class="row">
 			<div class="col s12">
-				<div id="map" style="height: 500px; width: 600px;">
+				<div id="map-navigation" style="height: 500px; width: 600px;">
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<a ui-sref="home">Back</a>
+	<a ui-sref="map">Back</a>
 
 	<div>
-		<button ui-sref ="navigation">Start</button>
-		<!-- <button ng-click="stopRunning()">Stop</button> -->
+		<button ng-click="startRunning()">Start</button>
+		<button ng-click="stopRunning()">Stop</button>
 	</div>
 
 </section>

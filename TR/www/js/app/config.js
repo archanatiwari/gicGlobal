@@ -13,6 +13,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/map.html',
             controller: 'mapController'
         })
+        .state('navigation', {
+            url: '/navigation',
+            templateUrl: 'partials/navigation.html',
+            controller: 'navigationController'
+        })
         .state('team', {
             url: '/team',
             templateUrl: 'partials/team.html',

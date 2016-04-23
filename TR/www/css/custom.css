@@ -75,4 +75,7 @@ footer p {
 
 .wrapper {
     height: 100vh;
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
   }

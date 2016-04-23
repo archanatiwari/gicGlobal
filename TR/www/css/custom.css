@@ -389,6 +389,12 @@ float: right;
     z-index: 2;
 }
 
+.notification .card .card-content p {
+    margin: 0;
+    color: inherit;
+    min-height: 3rem;
+}
+
 .notification .card {
     position: relative;
     margin: 0.2rem 0 .5rem 0;

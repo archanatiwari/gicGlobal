@@ -348,6 +348,26 @@ float: right;
     bottom: 10px;
 }
 
+.teamlisting .top-score {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    text-align: left;
+}
+.teamlisting .top-value {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.teamlisting .btn-black {
+    width: 94%;
+    margin: 5% 0px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+}
 
 /*notificatio =- Archit*/
 
@@ -421,3 +441,4 @@ float: right;
 .notification .first_row{
     padding-top: 1rem;
 }
+

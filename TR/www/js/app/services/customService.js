@@ -55,4 +55,12 @@ app.service('SharedDataService', function($http) {
         return this.completedTerritory;
     };
 
+    this.setSelectedTerritory = function(territory){
+        this.selectedTerritory = territory;
+    };
+
+    this.getSelectedTerritory = function(){
+        return this.selectedTerritory;
+    };
+
 });

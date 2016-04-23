@@ -28,22 +28,45 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+       
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- js libs -->
+        <script src="js/lib/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lib/angular.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCVdNjCjSVWFTEv6xOvMP7kAbb2VXo4cew&libraries=geometry,places&callback=angular.noop"></script> 
+        
+        <title>Territory run</title>
+    </head>
+    <body ng-app="trApp">
+
+        <div class="wrapper" ui-view></div>
+        
+        <script type="text/javascript" src="js/app/index.js"></script>
+        <script type="text/javascript" src="js/app/config.js"></script>
+        <script type="text/javascript" src="js/app/directives/customDirective.js"></script>
+        <script type="text/javascript" src="js/app/services/customService.js"></script>
+        <!-- controllers -->
+        <script type="text/javascript" src="js/app/controllers/headerController.js"></script>
+        <script type="text/javascript" src="js/app/controllers/loginController.js"></script>
+        <script type="text/javascript" src="js/app/controllers/teamListingController.js"></script>
+        <script type="text/javascript" src="js/app/controllers/teamController.js"></script>
+        <script type="text/javascript" src="js/app/controllers/landingController.js"></script>
+        <script type="text/javascript" src="js/app/controllers/navigationController.js"></script>
+
+
     </body>
 </html>

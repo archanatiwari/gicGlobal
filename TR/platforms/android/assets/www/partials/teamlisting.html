@@ -1,0 +1,49 @@
+
+<!-- <div>
+	<div id="map" style="height: 500px; width: 600px;">
+	</div>
+</div> -->
+ 
+<section class="teamlisting bg">
+	<div class="top_header">
+		<div class="container ">
+			<header-template></header-template>
+			<div class="heading">
+	            <h3>Territory Run</h3>  
+	        </div>
+	    	<span class="pull-right bell_icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+	    	<div class="info_section_header">
+	    		<div class="row">
+	    			<div class="col s9">
+	    				<h5>{{ teamName }}</h5>
+	    				<h4>{{ completedArea }} m<sup>2</sup></h4>
+	    			</div>
+	    			<div class="col s3 right_section_time right-align">
+	    				<i class="fa fa-2x fa-long-arrow-up top_arrow" ui-sref="landing"></i>
+	    				<h6>Today</h6>
+	    				<span>{{ last_covered_dist }} m<sup>2</sup></span>
+	    			</div>
+	    		</div>	
+	    	</div>
+		</div>
+	</div>
+	<div class="listing_section">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<ul class="collection" ng-repeat ="item in teamMembers">
+						<li class="collection-item avatar">
+					      <div class="user_image_list"><i class="fa fa-user left"></i></div>
+					      <span class="title">{{item.name}}</span>
+					      <span class="right">{{item.area}}m<sup>2</sup></span>
+					    </li>
+				    </ul>
+				    <a class="waves-effect waves-light btn btn-block invite_button">invite friends</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- <a ui-sref="map">Map</a> -->

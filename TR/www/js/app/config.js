@@ -36,7 +36,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('leaderboard', {
             url: '/leaderboard',
             templateUrl: 'partials/leaderboard.html',
-            controller: 'leaderboardController'
+            // controller: 'leaderboardController'
         });
 });
 

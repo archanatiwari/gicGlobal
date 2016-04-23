@@ -1,34 +1,534 @@
 .navbar-default {
-  background-color: #1BA39C;
-  border-color: #1BA39C;
+    background-color: #1BA39C;
+    border-color: #1BA39C;
 }
+
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
 }
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: rgba(221, 221, 221, 0);
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(221, 221, 221, 0);
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #F9F9F9;
+    background-color: #F9F9F9;
 }
+
 .navbar-default .navbar-brand {
-  color: #FDC360;
+    color: #FDC360;
 }
+
 .btn-default {
-  color: #F9F9F9;
-  background-color: #4B77BE;
-  border-color: #4B77BE;
+    color: #F9F9F9;
+    background-color: #4B77BE;
+    border-color: #4B77BE;
 }
-footer{
+
+footer {
     background-color: rgb(27, 163, 156);
-  color: #ffffff;
-  padding: 10px 10px;
-  margin-top: 20px;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
+    color: #ffffff;
+    padding: 10px 10px;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
-footer p{margin:0px;}
+
+footer p {
+    margin: 0px;
+}
+.btn-block {
+    display: block!important;
+}
+
+/*login*/
+
+.login {
+    background: url(../img/login-bg.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.login .login-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.login h2 {
+    font-size: 2.2rem!important;
+    text-align: center;
+    margin: 23% 0 20% 0;
+}
+
+.login .btn-block {
+    width: 100%;
+    margin: 10% 0 0 0;
+}
 
 
+/*Side Nav - archit*/
 
+.side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 45px!important;
+    line-height: 47px!important;
+    padding: 0 50px!important;
+}
+
+.side-nav a span {
+    position: absolute;
+    float: left;
+    margin-top: 16px;
+    left: 11px;
+}
+
+.side-nav a i {
+    position: absolute;
+    font-size: 1.3rem;
+    left: 10px;
+    margin-top: 13px;
+}
+
+.side-nav .logoutSid {
+    position: absolute;
+    bottom: 54px;
+    text-align: center;
+    width: 100%;
+}
+
+.login .btn-login {
+    width: 100%;
+    margin: 10% 0 0 0;
+    background: rgba(255,255,255,0.10);
+    box-shadow: none;
+    border-radius: 8px;
+    height: 45px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.login .login-input{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color:#fff;
+}
+.login label{
+   color:rgba(255, 255, 255, 0.2) !important;
+}
+.wrapper {
+    height: 100vh;
+
+}
+.bg{
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#map, #map-navigation{
+    height: 100%;
+    width:100%;
+    position: absolute;
+}
+
+/*button-collapse*/
+
+.button-collapse {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    margin-right: 15px;
+    position: relative;
+}
+
+
+/*heading*/
+
+.landing {
+    position: relative;
+}
+
+.landing .gradient-overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 10%, rgba(0, 105, 94, 0.75) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(47%, rgba(246, 246, 246, 0.47)), color-stop(100%, rgba(0, 105, 94, 0.75)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 10%, rgba(0, 105, 94, 0.75) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 10%, rgba(0, 105, 94, 0.75) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 10%, rgba(0, 105, 94, 0.75) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(246, 246, 246, 0.47) 10%, rgba(0, 105, 94, 0.75) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4db6ac', GradientType=1);
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+}
+
+.landing .heading {
+    display: inline-block;
+    position: relative;
+}
+
+.landing .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.landing span {
+    margin-top: 28px;
+}
+
+.landing span i{
+    font-size: 20px;
+}
+
+.landing .inner-container {
+    width: 100%;
+}
+
+.landing .btn-black {
+    width: 100%;
+    margin: 5% 0px;
+    background: #000;
+}
+.landing .container {
+    height: 100vh;
+}
+
+.landing .title-block {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.landing .title-block i{
+    color:#676767;
+}
+.landing .title-block .floating-location{
+float: right;
+}
+.landing .title-block .info_section_header{
+    padding-top: 20px;
+    color:#fff;
+}
+.landing .title-block .info_section_header h5{
+    font-size: 1.2rem;
+}
+.landing .title-block .info_section_header h4{
+        font-size: 1.8rem;
+}
+.landing .title-block .info_section_header h6 {
+    font-size: 0.8rem;
+    right: 7px;
+    position: relative;
+}
+.landing .title-block .info_section_header .left_section_title{
+    padding-top: 12%;
+}
+.landing .title-block .info_section_header .right_section_time{
+    padding-top: 8%;
+}
+.landing .title-block .info_section_header .right_section_time .top_arrow{
+    position: absolute;
+    float: left;
+    right: 45px;
+    margin-top: 14px;
+    color: #fff;
+}
+
+/* teamlisting - Archit*/
+.teamlisting{
+    height:100%;
+}
+.teamlisting .heading {
+    display: inline-block;
+}
+.teamlisting .top_header .fa-bars{
+    color: #fff;
+}
+.teamlisting .top_header {
+    background: rgba(0, 105, 94, 0.75);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+}
+.teamlisting .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.teamlisting .bell_icon {
+    margin-top: 28px;
+}
+.teamlisting span i{
+    font-size: 20px;
+}
+.teamlisting .info_section_header{
+    padding-top: 20px;
+}
+.teamlisting .info_section_header .row{
+    margin-bottom: 0px;
+}
+.teamlisting .info_section_header h5{
+    font-size: 1.2rem;
+}
+.teamlisting .info_section_header h4{
+        font-size: 1.8rem;
+}
+.teamlisting .info_section_header h6 {
+    font-size: 0.8rem;
+    right: 7px;
+    position: relative;
+}
+.teamlisting .info_section_header .right_section_time{
+    padding-top: 8%;
+}
+.teamlisting .info_section_header .right_section_time .top_arrow{
+        position: absolute;
+    float: left;
+    right: 66px;
+    margin-top: 14px;
+}
+.teamlisting .listing_section{
+    margin-top: -20px;
+    background: rgba(255, 255, 255, 0.88);
+    height: 100%;
+}
+.teamlisting .collection {
+    margin: 0.5rem 0 1rem 0;
+    border: transparent!important;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    top: 13rem;
+}
+.teamlisting .collection .collection-item {
+    background-color: transparent;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0;
+    border-bottom: none;
+}
+.teamlisting .collection .collection-item.avatar {
+    min-height: 55px;
+    padding-left: 23px;
+    position: relative;
+}
+.teamlisting .collection-item .user_image_list{
+    background: #BFBFBF;
+    position: absolute;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    left: 7px;
+}
+.teamlisting .collection-item .user_image_list i{
+    text-align: center;
+    position: relative;
+    left: 6px;
+    top: 4px;
+    color: dimgrey;
+}
+.collection .collection-item.avatar .title {
+    font-size: 16px;
+    padding-left: 20px;
+}
+.listing_section .btn-block {
+    display: block!important;
+}
+.listing_section .invite_button{
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+}
+
+.teamlisting .top-score {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    text-align: left;
+}
+.teamlisting .top-value {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.teamlisting .btn-black {
+    width: 94%;
+    margin: 5% 0px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+}
+
+/*notificatio =- Archit*/
+
+.notification{
+    height:100%;
+}
+
+
+.notification .heading {
+    display: inline-block;
+}
+/*.notification .top_header .fa-bars{
+    color: #fff;
+}*/
+.notification .top_header .fa-bars {
+    color: #000;
+}
+.notification .top_header {
+    background: rgba(255, 255, 255, 0.73);
+    color: #000;
+    position: relative;
+    border-bottom:1px solid gray;
+}
+.notification .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.notification .card .card-content {
+    padding: 10px 0 0px 10px;
+    border-radius: 0;
+}
+.notification .card .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: none;
+    padding: 0px 0 5px 10px;
+    z-index: 2;
+}
+
+.notification .card .card-content p {
+    margin: 0;
+    color: inherit;
+    min-height: 3rem;
+}
+
+.notification .card {
+    position: relative;
+    margin: 0.2rem 0 .5rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.notification .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #26a69a;
+    margin-right: 20px;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+.notification .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: #2BC3B5;
+}
+
+.notification .row {
+    margin-bottom: 0px;
+    background: rgba(255, 255, 255, 0.66)!important;
+}
+
+.notification .first_row{
+    padding-top: 1rem;
+}
+
+/*leader Board*/
+
+.leaderboard{
+    height:100%;
+}
+
+
+.leaderboard .heading {
+    display: inline-block;
+}
+/*.notification .top_header .fa-bars{
+    color: #fff;
+}*/
+.leaderboard .top_header .fa-bars {
+    color: #000;
+}
+.leaderboard .top_header {
+    background: rgba(255, 255, 255, 0.73);
+    color: #000;
+    position: fixed;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    z-index: 2;
+}
+.leaderboard .heading h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+.leaderboard .top_header .row{
+    margin-bottom: 0px;
+}
+.leaderboard .tabs{
+    background-color: rgba(255, 255, 255, 0);
+}
+.leaderboard .tabs .tab a{
+    color:#000;
+}
+.leaderboard .tabs .tab a:hover {
+    color: #000;
+}
+.leaderboard .tabs .indicator{
+    background-color: #26a69a;
+}
+.leaderboard .tab-container{
+    position: relative;
+    top:20%;
+    z-index:1;
+}
+.leaderboard .card .card-content {
+    min-height: 90px;
+}
+.leaderboard .card .card-content .cardname{
+    color: #fff;
+    font-size: 12px;
+}
+.leaderboard .card .card-content .cardvalue {
+    color: #fff;
+    font-size:18px;
+}
+.leaderboard .card .card-content .cardarea{
+    color: #fff;
+    font-size:28px;
+}
+.leaderboard .card .card-content .cardarea span{
+    color: #fff;
+    font-size: 12px;
+}
+.leaderboard .card .card-content .pull-right{
+    float: right;
+}
+.leaderboard .lbred{
+    background-color:rgba(203, 73, 73, 0.85);
+}
+.leaderboard .lbpurple{
+    background-color:rgba(123, 59, 163, 0.85);
+}
+.leaderboard .lbblue{
+    background-color:rgba(35, 100, 152, 0.85);
+}
+.leaderboard .lbyellow{
+    background-color:rgba(230, 137, 53, 0.85);
+}
+.leaderboard .lbgreen{
+background-color:#238b94
+}
+.leaderboard .card .card-content .col{
+    padding: 0rem 0rem;
+}

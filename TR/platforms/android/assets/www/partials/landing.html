@@ -1,0 +1,36 @@
+<section class="landing">
+    <div id="map"></div>
+    <div class="gradient-overlay"></div>
+    <div class="container">
+        <header-template></header-template>
+        <div class="heading">
+            <h3>Territory Run </h3>
+        </div>
+        <span class="pull-right"><i class="fa fa-bell" aria-hidden="true"></i></span>
+        <div class="row">
+            <div class="col s12">
+                <a ui-sref="navigation" class="waves-effect waves-light btn btn-black">START RUN</a>
+            </div>
+        </div>
+        <div class="title-block">
+            <div class="floating-location">
+                <a class="btn-floating btn-large waves-effect waves-light white">
+                    <i class="material-icons ">my_location</i>
+                </a>
+            </div>
+            <div class="info_section_header">
+                <div class="row">
+                    <div class="col s9 left_section_title">
+                        <h5 ng-cloak>{{ teamName }}</h5>
+                        <h4 ng-cloak>{{completedArea}}m<sup>2</sup></h4>
+                    </div>
+                    <div class="col s3 right_section_time right-align">
+                        <i class="fa fa-2x fa-long-arrow-up top_arrow" ng-click="updtSelctdTeritoty()"></i>
+                        <h6>Today</h6>
+                        <span ng-cloak>{{ last_covered_dist }} m<sup>2</sup></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

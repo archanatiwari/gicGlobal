@@ -1,8 +1,8 @@
-app.controller('navigationController', function($scope, SharedFactory, SharedDataService){
+app.controller('navigationController', function($scope, $state, SharedFactory, SharedDataService){
 
 	//private variables
 	var map = null, userPosition = null;
-  	var speed = 50, delay = 100, curRouteIndex = 0; curIndex = -1, curRoute = [], userRoute = null, runningStopped = false;   
+  	var speed = 50, delay = 100, curRouteIndex = 1; curIndex = -1, curRoute = [], userRoute = null, runningStopped = false;   
 
 	var loadMap = function(){
 	    var userPos = $scope.currentUser.source;
@@ -24,12 +24,14 @@ app.controller('navigationController', function($scope, SharedFactory, SharedDat
 	    userRoute = new google.maps.Polyline({
 	        path: [],
 	        geodesic : true,
-	        strokeColor: '#FF0000',
+	        strokeColor: '#00796B',
 	        strokeOpacity: 1.0,
 	        strokeWeight: 2,
 	        editable: false,
 	        map:map
 	    });
+
+      $scope.startRunning();
 	};
 
 	var onSuccess = function(response) {
@@ -86,10 +88,10 @@ app.controller('navigationController', function($scope, SharedFactory, SharedDat
                 //curIndex++;
                 if (curIndex == curRoute.length -1){
                   //completed the loop, reached source position
-                  userRoute.setPath([]); //clear the path
+                  //userRoute.setPath([]); //clear the path
                   //colorMaps(curUser.routes[curRouteIndex].path, "#E01B2F", curUser.id); // mark the territory
                   curIndex = 0; 
-                  curRouteIndex++;                
+                  //curRouteIndex++;                
                 }else{
                   setTimeout(getNextPosition, delay);
                 }
@@ -119,6 +121,9 @@ app.controller('navigationController', function($scope, SharedFactory, SharedDat
 
     $scope.stopRunning = function(){
       runningStopped = true;
+      var curUser =  $scope.currentUser;
+      SharedDataService.setNewTerritory(curUser.routes[curRouteIndex].path, curUser.teamColor, curUser.id);
+      $state.go('landing');
     };
 
 });

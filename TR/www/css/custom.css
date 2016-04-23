@@ -118,17 +118,19 @@ footer p {
 .login label{
    color:rgba(255, 255, 255, 0.2) !important;
 }
-
-
-/*wrapper*/
-
 .wrapper {
     height: 100vh;
+
 }
 .bg{
     background: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
+}
+#map, #map-navigation{
+    height: 100%;
+    width:100%;
+    position: absolute;
 }
 
 /*button-collapse*/
@@ -139,6 +141,7 @@ footer p {
     font-size: 24px;
     color: #000;
     margin-right: 15px;
+    position: relative;
 }
 
 
@@ -166,6 +169,7 @@ footer p {
 
 .landing .heading {
     display: inline-block;
+    position: relative;
 }
 
 .landing .heading h3 {
@@ -249,6 +253,7 @@ float: right;
 .teamlisting .top_header{
     background: rgba(0, 105, 94, 0.75);
     color: #fff;
+    position: relative;
 }
 .teamlisting .heading h3 {
     font-size: 24px;
@@ -329,6 +334,11 @@ float: right;
     font-size: 16px;
     padding-left: 20px;
 }
-.collection .btn-block {
+.listing_section .btn-block {
     display: block!important;
+}
+.listing_section .invite_button{
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
 }

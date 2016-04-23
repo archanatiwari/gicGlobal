@@ -13,11 +13,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/teamlisting.html',
             controller: 'teamListingController'
         })
-        .state('map', {
-            url: '/map',
-            templateUrl: 'partials/map.html',
-            controller: 'mapController'
-        })
+        // .state('map', {
+        //     url: '/map',
+        //     templateUrl: 'partials/map.html',
+        //     controller: 'mapController'
+        // })
         .state('navigation', {
             url: '/navigation',
             templateUrl: 'partials/navigation.html',
@@ -34,3 +34,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'loginController'
         });
 });
+
+// app.run(function($rootScope){
+//  $rootScope.$on('$stateChangeSuccess', 
+//          function(event, toState, toParams, fromState, fromParams){ 
+//              if(fromState.name == "navigation" && toState.name == "map"){
+//                 //$rootScope.$broadcast('setNewTerritory');
+//              }
+//          });
+// });

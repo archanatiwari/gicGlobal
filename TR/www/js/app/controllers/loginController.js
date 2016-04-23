@@ -17,7 +17,7 @@ app.controller('loginController', function($scope, $state, SharedFactory, Shared
             var user = userData[i];
             if (user.email == $scope.email && user.password == $scope.password) {
                 SharedDataService.setCurrentUser(user);
-                $state.go('home');
+                $state.go('landing');
                 break;
             } else {
                 console.log('Enter correct username and password');

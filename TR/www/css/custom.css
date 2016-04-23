@@ -49,24 +49,34 @@ footer p {
     background-position: center;
     background-size: cover;
 }
-.login .login-container{
+
+.login .login-container {
     position: absolute;
     bottom: 0;
 }
-.login .login-container .login-input{
+
+.login .login-container .login-input {
     border-bottom: 1px solid #7f7f2d;
 }
-.login .login-container label{
+
+.login .login-container label {
     color: #d2d2d2;
 }
+
 .login h2 {
     font-size: 2.2rem!important;
     text-align: center;
     margin: 23% 0 20% 0;
 }
-.login .btn-block{width:100%;margin: 10% 0 0 0;}
+
+.login .btn-block {
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
 
 /*Side Nav*/
+
 .side-nav a {
     color: #444;
     display: block;
@@ -75,19 +85,22 @@ footer p {
     line-height: 47px!important;
     padding: 0 50px!important;
 }
-.side-nav a span{
+
+.side-nav a span {
     position: absolute;
     float: left;
     margin-top: 16px;
     left: 11px;
-  }
-.side-nav a i{
-      position: absolute;
+}
+
+.side-nav a i {
+    position: absolute;
     font-size: 1.3rem;
     left: 10px;
     margin-top: 13px;
 }
-.side-nav .logoutSid{
+
+.side-nav .logoutSid {
     position: absolute;
     bottom: 54px;
     text-align: center;
@@ -107,4 +120,45 @@ footer p {
     background: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
-  }
+}
+
+
+/*button-collapse*/
+
+.button-collapse {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    margin-right: 15px;
+}
+
+
+/*heading*/
+.landing{
+
+}
+.landing .heading {
+    display: inline-block;
+}
+
+.landing .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.landing span {
+    margin-top: 20px;
+}
+.landing span i{
+    font-size: 22px;
+}
+.landing .inner-container{
+    width:100%;
+}
+.landing .btn-black {
+    width: 100%;
+    margin:5% 0px;
+    background: #000;
+}

@@ -39,3 +39,31 @@ footer p{margin:0px;}
     margin: 23% 0 20% 0;
 }
 .login .btn-block{width:100%;margin: 10% 0 0 0;}
+
+/*Side Nav*/
+.side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 45px!important;
+    line-height: 47px!important;
+    padding: 0 50px!important;
+}
+.side-nav a span{
+    position: absolute;
+    float: left;
+    margin-top: 16px;
+    left: 11px;
+  }
+.side-nav a i{
+      position: absolute;
+    font-size: 1.3rem;
+    left: 10px;
+    margin-top: 13px;
+}
+.side-nav .logoutSid{
+    position: absolute;
+    bottom: 54px;
+    text-align: center;
+    width: 100%;
+}

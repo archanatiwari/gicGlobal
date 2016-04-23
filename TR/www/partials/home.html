@@ -2,7 +2,37 @@
 	<div id="map" style="height: 500px; width: 600px;">
 	</div>
 </div> -->
-
+ <ul id="slide-out" class="side-nav">
+  <li><a href="#!">First Sidebar Link</a></li>
+  <li><a href="#!">Second Sidebar Link</a></li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!">First</a></li>
+            <li><a href="#!">Second</a></li>
+            <li><a href="#!">Third</a></li>
+            <li><a href="#!">Fourth</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul class="right hide-on-med-and-down">
+  <li><a href="#!">First Sidebar Link</a></li>
+  <li><a href="#!">Second Sidebar Link</a></li>
+  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">First</a></li>
+    <li><a href="#!">Second</a></li>
+    <li><a href="#!">Third</a></li>
+    <li><a href="#!">Fourth</a></li>
+  </ul>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-cog"></i></a>
 <section class="home">
 	<div class="container">
 		<div class="row">
@@ -10,3 +40,17 @@
 		</div>
 	</div>
 </section>
+
+<script type="text/javascript">
+	 $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+ );
+	 // Show sideNav
+	  $('.button-collapse').sideNav('show');
+	  // Hide sideNav
+	  $('.button-collapse').sideNav('hide');
+
+</script>

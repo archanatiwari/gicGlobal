@@ -114,13 +114,13 @@ app.controller('landingController', function($scope, $state, SharedFactory, Shar
         "lat": 12.907537,
         "lng": 77.653069
       }, {
-        "lat": 12.908057,
-        "lng": 77.653131
+        "lat": 12.908083,
+        "lng": 77.653139
       },  {
         "lat": 12.908175,
         "lng": 77.65227
       }
-      
+
       ]
 
       update_secColorMap(updatedPath, '#D32F2F','57171e62f2a6bf241dc6148c');

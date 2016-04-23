@@ -119,9 +119,14 @@ footer p {
 
 .wrapper {
     height: 100vh;
-    background: url(../img/bg.jpg);
+    /*background: url(../img/bg.jpg);*/
     background-position: center;
     background-size: cover;
+}
+#map, #map-navigation{
+    height: 100%;
+    width:100%;
+    position: absolute;
 }
 
 
@@ -133,6 +138,7 @@ footer p {
     font-size: 24px;
     color: #000;
     margin-right: 15px;
+    position: relative;
 }
 
 
@@ -160,6 +166,7 @@ footer p {
 
 .landing .heading {
     display: inline-block;
+    position: relative;
 }
 
 .landing .heading h3 {
@@ -241,6 +248,7 @@ float: right;
 .teamlisting .top_header{
     background: rgba(0, 105, 94, 0.75);
     color: #fff;
+    position: relative;
 }
 .teamlisting .heading h3 {
     font-size: 24px;

@@ -123,7 +123,7 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
       runningStopped = true;
       var curUser =  $scope.currentUser;
       SharedDataService.setNewTerritory(curUser.routes[curRouteIndex].path, curUser.teamColor, curUser.id);
-      $state.go('map');
+      $state.go('landing');
     };
 
 });

@@ -1,28 +1,49 @@
-app.controller('landingController', function($scope, $rootScope, SharedFactory, SharedDataService){
+app.controller('landingController', function($scope, $state, SharedFactory, SharedDataService){
 
   //private variables
   var map = null, userPosition = null;
+  // $scope.teamName = "", $scope.completedArea = null;
+
+  $scope.getTerritoryInfo = function(userId, userClicked){
+    var userData = $scope.userData, userObj;
+    $scope.selctedObj = {};
+    for(var i=0; i<userData.length; i++){
+      if(userData[i].id == userId){
+          $scope.selctedObj = userObj = userData[i];
+          break;
+      }
+    };
+
+    $scope.teamName = userObj.teamName;
+    var totalArea = 0;
+    userObj.teamMembers.forEach(function(value, index){
+      totalArea += value.area;
+    });
+    $scope.completedArea = totalArea;
+    console.log($scope.completedArea);
+    $scope.last_covered_dist = userObj.teamMembers[userObj.teamMembers.length-1].area;
+    if(userClicked)
+      $scope.$apply();
+  };
 
   function colorMaps(path, color, id) {
-    //arr.forEach(function(value, index){
-      //var path, color, id;
-        var polygon = new google.maps.Polygon({
+    var polygon = new google.maps.Polygon({
         paths: path,
         strokeColor: color,
         strokeOpacity: 1,
         strokeWeight: 1,
         fillColor: color,
         fillOpacity: 0.3
-     });
+    });
 
      polygon['userId'] = id;
      polygon.setMap(map);
      google.maps.event.addListener(polygon, 'click', function(h) {
-         console.log(polygon.userId);
+         //console.log(polygon.userId);
+         $scope.getTerritoryInfo(polygon.userId, true);
 
      });
 
-    //});
   };
 
   // $rootScope.$on('setNewTerritory', function(){
@@ -53,6 +74,8 @@ app.controller('landingController', function($scope, $rootScope, SharedFactory, 
     var obj = SharedDataService.getNewTerritory();
     if(obj)
       colorMaps(obj.path, obj.color, obj.userId);
+
+    $scope.getTerritoryInfo($scope.currentUser.id, false);
   };
 
     var onSuccess = function(response) {
@@ -68,6 +91,19 @@ app.controller('landingController', function($scope, $rootScope, SharedFactory, 
     //if user data is not available then only call factory
     if(!$scope.userData)
       SharedFactory.getData().then(onSuccess, onError);
-    // else
-    //   loadMap();
+
+
+    $scope.updtSelctdTeritoty = function(){
+      var obj = {};
+      $scope.selctedObj; 
+      obj.teamMembers = $scope.selctedObj.teamMembers;
+      obj.userId = $scope.selctedObj.id;
+      obj.teamName = $scope.teamName;
+      obj.last_covered_dist = $scope.last_covered_dist;
+      obj.completedArea = $scope.completedArea;
+      SharedDataService.setSelectedTerritory(obj);
+
+      $state.go('teamlisting');
+    }
+
 });

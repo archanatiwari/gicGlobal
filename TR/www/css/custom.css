@@ -436,3 +436,93 @@ float: right;
     padding-top: 1rem;
 }
 
+/*leader Board*/
+
+.leaderboard{
+    height:100%;
+}
+
+
+.leaderboard .heading {
+    display: inline-block;
+}
+/*.notification .top_header .fa-bars{
+    color: #fff;
+}*/
+.leaderboard .top_header .fa-bars {
+    color: #000;
+}
+.leaderboard .top_header {
+    background: rgba(255, 255, 255, 0.73);
+    color: #000;
+    position: fixed;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    z-index: 2;
+}
+.leaderboard .heading h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+.leaderboard .top_header .row{
+    margin-bottom: 0px;
+}
+.leaderboard .tabs{
+    background-color: rgba(255, 255, 255, 0);
+}
+.leaderboard .tabs .tab a{
+    color:#000;
+}
+.leaderboard .tabs .tab a:hover {
+    color: #000;
+}
+.leaderboard .tabs .indicator{
+    background-color: #26a69a;
+}
+.leaderboard .tab-container{
+    position: relative;
+    top:20%;
+    z-index:1;
+}
+.leaderboard .card .card-content {
+    min-height: 90px;
+}
+.leaderboard .card .card-content .cardname{
+    color: #fff;
+    font-size: 12px;
+}
+.leaderboard .card .card-content .cardvalue {
+    color: #fff;
+    font-size:18px;
+}
+.leaderboard .card .card-content .cardarea{
+    color: #fff;
+    font-size:28px;
+}
+.leaderboard .card .card-content .cardarea span{
+    color: #fff;
+    font-size: 12px;
+}
+.leaderboard .card .card-content .pull-right{
+    float: right;
+}
+.leaderboard .lbred{
+    background-color:rgba(203, 73, 73, 0.85);
+}
+.leaderboard .lbpurple{
+    background-color:rgba(123, 59, 163, 0.85);
+}
+.leaderboard .lbblue{
+    background-color:rgba(35, 100, 152, 0.85);
+}
+.leaderboard .lbyellow{
+    background-color:rgba(230, 137, 53, 0.85);
+}
+.leaderboard .lbgreen{
+background-color:#238b94
+}
+.leaderboard .card .card-content .col{
+    padding: 0rem 0rem;
+}

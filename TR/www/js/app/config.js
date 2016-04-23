@@ -32,6 +32,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/login',
             templateUrl: 'partials/login.html',
             controller: 'loginController'
+        })
+        .state('leaderboard', {
+            url: '/leaderboard',
+            templateUrl: 'partials/leaderboard.html',
+            controller: 'leaderboardController'
         });
 });
 

@@ -9,7 +9,7 @@ app.controller('loginController', function($scope, $state, SharedFactory, Shared
     });
 	
 	//hard-coded login
-	$scope.email = "archit@globant.com", $scope.password = "1234abcd";
+    $scope.email = "archit@globant.com", $scope.password = "1234abcd";
 
     $scope.doLogin = function() {
         var userData = $scope.userData;

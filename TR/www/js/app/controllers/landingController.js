@@ -2,7 +2,6 @@ app.controller('landingController', function($scope, $rootScope, SharedFactory, 
 
   //private variables
   var map = null, userPosition = null;
-  var speed = 50, delay = 100, curRouteIndex = 0; curIndex = -1, curRoute = [], userRoute = null, runningStopped = false;   
 
   function colorMaps(path, color, id) {
     //arr.forEach(function(value, index){
@@ -15,10 +14,12 @@ app.controller('landingController', function($scope, $rootScope, SharedFactory, 
         fillColor: color,
         fillOpacity: 0.3
      });
+
      polygon['userId'] = id;
      polygon.setMap(map);
      google.maps.event.addListener(polygon, 'click', function(h) {
          console.log(polygon.userId);
+
      });
 
     //});

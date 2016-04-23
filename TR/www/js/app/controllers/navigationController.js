@@ -1,8 +1,9 @@
-app.controller('navigationController', function($scope, $state, SharedFactory, SharedDataService){
+app.controller('navigationController', function($scope, $state, $timeout, SharedFactory, SharedDataService){
 
 	//private variables
-	var map = null, userPosition = null;
-  	var speed = 50, delay = 100, curRouteIndex = 1; curIndex = -1, curRoute = [], userRoute = null, runningStopped = false;   
+	var map = null, userPosition = null, tracker = null;
+  var speed = 50, delay = 100, curRouteIndex = 1; curIndex = -1, curRoute = [], userRoute = null, runningStopped = false;   
+  var markerImage = "img/greenMarker.png";
 
 	var loadMap = function(){
 	    var userPos = $scope.currentUser.source;
@@ -19,6 +20,7 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
 	    userPosition = new google.maps.Marker({
 	        position: userPos,
 	        map: map,
+          icon: markerImage
 	    });
 
 	    userRoute = new google.maps.Polyline({
@@ -93,7 +95,7 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
                   curIndex = 0; 
                   //curRouteIndex++;                
                 }else{
-                  setTimeout(getNextPosition, delay);
+                  tracker = $timeout(getNextPosition, delay);
                 }
             }
         }
@@ -120,6 +122,7 @@ app.controller('navigationController', function($scope, $state, SharedFactory, S
     };
 
     $scope.stopRunning = function(){
+      $timeout.cancel(tracker);
       runningStopped = true;
       var curUser =  $scope.currentUser;
       SharedDataService.setNewTerritory(curUser.routes[curRouteIndex].path, curUser.teamColor, curUser.id);

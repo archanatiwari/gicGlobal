@@ -133,6 +133,16 @@ footer p {
     position: absolute;
 }
 
+#map .gmnoprint a, #map-navigation .gmnoprint a
+#map .gmnoprint span, #map-navigation .gmnoprint span
+#map .gmnoprint div, #map-navigation .gmnoprint div{
+  display: none;
+}
+#map img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4_hdpi.png"],
+#map a[href^="https://maps.google.com/maps"], #map-navigation img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4_hdpi.png"], #map-navigation a[href^="https://maps.google.com/maps"]{
+  display: none !important;
+}
+
 /*button-collapse*/
 
 .button-collapse {

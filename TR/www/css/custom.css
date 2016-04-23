@@ -75,7 +75,7 @@ footer p {
 }
 
 
-/*Side Nav*/
+/*Side Nav - archit*/
 
 .side-nav a {
     color: #444;
@@ -168,11 +168,11 @@ footer p {
 }
 
 .landing span {
-    margin-top: 20px;
+    margin-top: 28px;
 }
 
-.landing span i {
-    font-size: 22px;
+.landing span i{
+    font-size: 20px;
 }
 
 .landing .inner-container {
@@ -184,7 +184,6 @@ footer p {
     margin: 5% 0px;
     background: #000;
 }
-
 .landing .container {
     height: 100vh;
 }
@@ -196,3 +195,53 @@ footer p {
 .landing .title-block i{
     color:#676767;
 }
+
+/* teamlisting - Archit*/
+.teamlisting{}
+.teamlisting .heading {
+    display: inline-block;
+}
+.teamlisting .top_header .fa-bars{
+    color: #fff;
+}
+.teamlisting .top_header{
+    background: rgba(4,143,129,0.75);
+        color: #fff;
+}
+.teamlisting .heading h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.teamlisting span {
+    margin-top: 28px;
+}
+.teamlisting span i{
+    font-size: 20px;
+}
+.teamlisting .info_section_header{
+    padding-top: 20px;
+}
+.teamlisting .info_section_header h5{
+    font-size: 1.2rem;
+}
+.teamlisting .info_section_header h4{
+        font-size: 1.8rem;
+}
+.teamlisting .info_section_header h6 {
+    font-size: 0.8rem;
+    right: 7px;
+    position: relative;
+}
+.teamlisting .info_section_header .right_section_time{
+    padding-top: 8%;
+}
+.teamlisting .info_section_header .right_section_time .top_arrow{
+        position: absolute;
+    float: left;
+    right: 66px;
+    margin-top: 14px;
+}
+

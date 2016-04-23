@@ -8,10 +8,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/landing.html',
             controller: 'landingController'
         })
-        .state('home', {
-            url: '/home',
-            templateUrl: 'partials/home.html',
-            controller: 'homeController'
+        .state('teamlisting', {
+            url: '/teamlisting',
+            templateUrl: 'partials/teamlisting.html',
+            controller: 'teamListingController'
         })
         .state('map', {
             url: '/map',

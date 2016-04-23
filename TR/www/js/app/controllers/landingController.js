@@ -3,7 +3,7 @@ app.controller('landingController', function($scope, $state, SharedFactory, Shar
   //private variables
   var map = null, userPosition = null, lastCoveredDist = 0, updatedPath, sec_polygon;
   // $scope.teamName = "", $scope.completedArea = null;
-
+  $scope.selectedColor = "green"
   $scope.getTerritoryInfo = function(userId, userClicked){
     var userData = $scope.userData, userObj;
     $scope.selctedObj = {};
@@ -20,7 +20,6 @@ app.controller('landingController', function($scope, $state, SharedFactory, Shar
       totalArea += value.area;
     });
     $scope.completedArea = totalArea + lastCoveredDist;
-    console.log($scope.completedArea);
     $scope.last_covered_dist = lastCoveredDist ? lastCoveredDist : userObj.teamMembers[userObj.teamMembers.length-1].area;
     if(userClicked)
       $scope.$apply();
@@ -39,9 +38,12 @@ app.controller('landingController', function($scope, $state, SharedFactory, Shar
      polygon['userId'] = id;
      polygon.setMap(map);
      google.maps.event.addListener(polygon, 'click', function(h) {
-         //console.log(polygon.userId);
+        if(polygon.fillColor == "#1565C0"){
+          $scope.selectedColor = "blue";
+        }else{
+          $scope.selectedColor = "green";
+        }
          $scope.getTerritoryInfo(polygon.userId, true);
-
      });
 
   };
@@ -65,6 +67,7 @@ app.controller('landingController', function($scope, $state, SharedFactory, Shar
        sec_polygon.setMap(map);
        google.maps.event.addListener(sec_polygon, 'click', function(h) {
            //console.log(polygon.userId);
+            $scope.selectedColor = "red";
            $scope.getTerritoryInfo(sec_polygon.userId, true);
 
        });
